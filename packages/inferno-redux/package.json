@@ -31,7 +31,8 @@
     "inferno-create-element": "3.9.0",
     "inferno-shared": "3.9.0",
     "lodash.isplainobject": "^4.0.6",
-    "redux": "^2.0.0 || ^3.0.0"
+    "redux": "^2.0.0 || ^3.0.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "inferno-create-class": "3.9.0"
@@ -46,5 +47,10 @@
       "inferno-component": "Inferno.Component",
       "inferno-create-element": "Inferno.createElement"
     }
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
